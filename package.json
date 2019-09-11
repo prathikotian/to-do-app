@@ -1,0 +1,17 @@
+{
+  "name": "todos-list",
+  "version": "1.0.0",
+  "description": "Todos list app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pkotian",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.1",
+    "nodemon": "^1.18.11"
+  }
+}
