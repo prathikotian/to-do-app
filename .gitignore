@@ -1,4 +1,5 @@
-/node_modules
-/data
+node_modules
+data
 mongod
 .git
+Procfile
