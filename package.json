@@ -11,7 +11,10 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "mongoose": "^5.5.1",
-    "nodemon": "^1.18.11"
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.5.1"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }

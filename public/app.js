@@ -5,18 +5,18 @@ $(function(){
     .fail(function(err){
         console.log(err);
     });
-    
+
     $('#todoInput').keypress(function(event){
         if(event.which === 13 && $('#todoInput').val() != '') {
             createTodo();
         }
     });
-    
+
     $('ul').on("click", "span", function(event){
         event.stopPropagation();
         removeTodo($(this).parent());
     });
-    
+
     $('ul').on("click", "li", function(){
         updateTodo($(this));
     });
