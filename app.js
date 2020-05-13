@@ -1,6 +1,6 @@
 var express = require('express'),
     app = express(),
-    port = process.env.PORT,
+    port = 3000,
     bodyParser = require('body-parser'),
     todoRoutes = require('./routes/routes');
 
@@ -15,5 +15,5 @@ app.get("/", function(req, res){
 });
 
 app.listen(port, function(){
-    console.log("Server started on port " + port);
+    console.log(`Server started on port ${port}`);
 });
