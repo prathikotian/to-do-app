@@ -1,21 +1,21 @@
 {
-  "name": "todos-list",
+  "name": "to-do-list",
   "version": "1.0.0",
   "description": "Todos list app",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "pkotian",
+  "author": "prathikotian",
   "license": "GPL-3.0",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "mongodb": "^3.3.2",
     "mongoose": "^5.5.1"
   },
   "engines": {
     "node": "12.x",
     "npm": "6.x"
+    "mongoose": "^5.5.1"
   }
 }
