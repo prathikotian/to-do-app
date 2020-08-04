@@ -5,20 +5,24 @@
         <link rel="stylesheet" type="text/css" href="app.css">
         <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body>        
         <header>
-            <h1>todo<span>list</span></h1>
-            <h2>A simple todo list app built with node</h2>
-        </header>
-        
+            <div class="title">
+                <h1>todo<span>list</span></h1>
+                <h2>A simple todo list app built with node</h2>
+            </div>
+            <div class="theme">
+                <button class="bt bt-green"></button>
+                <button class="bt bt-gray"></button>
+            </div>            
+        </header>        
         <section class="form">
             <input type="text" id="todoInput" placeholder="Insert your task here..."/>
-        </section>
-        
+        </section>        
         <ul class="list">
-            
-        </ul>
-        
+            <li class="task">Buy Newspaper <span>X</span></li>
+            <li class="task">Read Newspaper <span>X</span></li>
+        </ul>        
         <script type="text/javascript" src="app.js"></script>
     </body>
 </html>

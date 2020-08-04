@@ -8,28 +8,87 @@ body {
 /*****************************HEADER STYLES*****************************/
 header {
 	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
 }
+
+.title {
+	padding-right: 5rem;
+}
+
 header h1 {
-	font-size: 64px;
+	font-size: 9vmin;
 	font-weight: 300;
-	margin: 80px 0 25px;
 	color: #2c3e50;
 }
+
 header h1 span {
 	font-weight: 700;
 }
+
 header h2 {
 	color: #bdc3c7;
 	font-weight:300;
+	font-size: 4vmin;
 }
+
+/****************************THEME BUTTON STYLES************************/
+.theme {
+	width: 12vmin;
+}
+
+.bt {
+	width: 20px;
+	height: 40px;
+	cursor: pointer;
+	transition: transform 600ms;
+}
+
+.bt-green {
+	/* background: #3cde7a; */
+	background: rgb(60, 222, 122);
+	/* border: solid 2px #16e666; */
+	border: solid 2px rgba(60, 222, 122, .9);
+	border-radius: 50px 0 0 50px;
+}
+
+.bt-gray {
+	background: #2c3e50;
+	border: solid 2px #2f4357;
+	border-radius: 0 50px 50px 0;
+}
+
+.bt:hover,
+.bt:focus {
+	outline: none;
+	transform: scale(1.1);
+}
+
+/****************************THEME COLOR CHANGE STYLES************************/
+.green {
+	color: rgb(60, 222, 122);
+}
+
+.green-light {
+	color: rgb(60, 222, 122, .7);
+}
+
+.green-light-border {
+	border-bottom: 1px solid rgb(60, 222, 122, .9);
+}
+
 /*****************************FORM STYLES*****************************/
 
-.form {
-	width: 800px;
+.form,
+header,
+.list {
+	/* width: 800px; */
+	width: 130vmin;
 	margin: 50px auto 20px;
 }
 
-#todoInput {
+input {
 	width: 100%;
 	height: 60px;
 	background: none;
@@ -43,11 +102,10 @@ header h2 {
 
 /*****************************LIST STYLES*****************************/
 .list {
-	width: 800px;
 	margin: 0 auto;
 }
 
-.task {
+li {
 	width: 100%;
 	height: 60px;
 	line-height: 60px;
@@ -56,12 +114,13 @@ header h2 {
 	color: #34495e;
 	transition: all .3s ease;
 }
-.task:hover {
+
+li:hover {
 	background: rgba(0, 0, 0, .02);
 	cursor: pointer;
 }
 
-.task:hover span{
+li:hover span{
 	opacity: 1;
 }
 
@@ -79,4 +138,37 @@ li span {
 
 li span:hover {
   color: #e74c3c
+}
+
+/*************************Media Queries****************/
+@media (max-width: 920px) {
+	header,
+	.form,
+	.list {
+		width: 500px;
+	}
+}
+
+@media (max-width: 620px) {
+	header,
+	.form,
+	.list {
+		width: 350px;
+	}
+
+	.title {
+		padding-right: 1rem;
+	}
+
+	.bt {
+		height: 30px;
+	}
+
+	.green {
+		border-radius: 200px 0 0 200px;
+	}
+
+	.gray {
+		border-radius: 0 200px 200px 0;
+	}
 }

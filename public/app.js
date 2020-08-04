@@ -20,6 +20,14 @@ $(function(){
     $('ul').on("click", "li", function(){
         updateTodo($(this));
     });
+
+    $('.theme').on("click", ".bt-green", function(){
+        setGreenTheme($(this))
+    });
+
+    $('.theme').on("click", ".bt-gray", function(){
+        setGrayTheme($(this))
+    });
 });
 
 function getTodos(todos){
@@ -76,4 +84,18 @@ function updateTodo(todo) {
         todo.toggleClass("done");
         todo.data('done', doneFlag);
     });
+}
+
+function setGreenTheme(theme) {
+    $('h1').addClass("green");
+    $('h2').addClass("green-light");
+    $('input').addClass("green-light green-light-border");
+    $('li').addClass("green");
+}
+
+function setGrayTheme(theme) {
+    $('h1').removeClass("green");
+    $('h2').removeClass("green-light");
+    $('input').removeClass("green-light green-light-border");
+    $('li').removeClass("green");
 }
