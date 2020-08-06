@@ -7,7 +7,7 @@
 > You can toggle between two themes: 
 > **Green** and **Gray**
 
-#### This app is hosted on `Heroku`, you can view and play around at [https://zenolist.herokuapp.com/](https://zenolist.herokuapp.com/)
+#### This app is hosted on [`Heroku`](https://www.heroku.com/), you can view and play around at [https://zenolist.herokuapp.com/](https://zenolist.herokuapp.com/)
 
 #### Go ahead and fork the repo.
 
